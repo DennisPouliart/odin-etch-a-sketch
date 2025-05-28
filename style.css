@@ -1,3 +1,26 @@
-* {
-    background-color: bisque;
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+#container > div {
+    background-color: #f7d4aa;
+    width: 5.3%;
+    height: 4vh;
+    margin: 0.4%;
+  
+}
+
+#container {
+    max-width: 700px;
+    max-height: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 95vw;
+    margin: 0 auto;
+    overflow: auto;
 }
