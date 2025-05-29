@@ -1,4 +1,6 @@
 const container = document.querySelector('#container');
+const reset = document.querySelector('#reset');
+const change = document.querySelector('#change');
 
 for(i=0; i<256; i++) {
     const square = document.createElement("div");
@@ -14,16 +16,14 @@ console.log(box);
 box.forEach(box => {
     box.addEventListener("mouseenter", (event) => {
         console.log("event enter fired");
-        event.target.style.backgroundColor = "#df4c39";
-    }) 
-
-    box.addEventListener("mouseleave", (event) => {
-        console.log("event leave fired");
-        event.target.style.backgroundColor = "#df4c39";
+        event.target.classList.add("active");
     }) 
 });
 
-/*box.addEventListener("mouseover", (event) => {
-    console.log("event fired");
-    event.target.style.backgroundColor = "purple";
-}) */
+reset.addEventListener("click", function (e) {
+    console.log("reset");
+    box.forEach((box) => {
+        box.classList.remove("active");
+    })
+});
+
