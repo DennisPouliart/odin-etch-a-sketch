@@ -1,8 +1,10 @@
 body {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     align-items: center;
+    align-content: center;
 }
 
 #container > div {
@@ -27,4 +29,27 @@ body {
 
 .active {
     background-color: #df4c39 !important;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    background-color: #F9F9F9;
+    border-radius: 12px;
+    border: none;
+    padding: 15px;
+    color: rgb(112, 112, 112);
+    margin: 0% 1% 2% 1%;
+    font-weight: 700;
+}
+
+.button button:hover {
+    background-color: #df4c39; 
+    color: white;
 }
