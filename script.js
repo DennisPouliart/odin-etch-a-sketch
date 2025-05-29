@@ -12,9 +12,14 @@ const box = document.querySelectorAll('#box');
 console.log(box);
 
 box.forEach(box => {
-    box.addEventListener("mouseover", (event) => {
-        console.log("event fired");
-        event.target.style.backgroundColor = "purple";
+    box.addEventListener("mouseenter", (event) => {
+        console.log("event enter fired");
+        event.target.style.backgroundColor = "#df4c39";
+    }) 
+
+    box.addEventListener("mouseleave", (event) => {
+        console.log("event leave fired");
+        event.target.style.backgroundColor = "#df4c39";
     }) 
 });
 

@@ -25,6 +25,6 @@ body {
     overflow: auto;
 }
 
-#active {
-    background-color: blueviolet;
+.active {
+    background-color: #df4c39 !important;
 }
